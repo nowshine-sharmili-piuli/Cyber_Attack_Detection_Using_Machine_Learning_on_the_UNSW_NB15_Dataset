@@ -83,7 +83,7 @@ models → compare results → visualize.
    missing values, class distribution, correlation heatmap, feature
    histograms, boxplots, and a pairplot on a 1,000-row sample.
 3. **Preprocessing**
-   - Drop `id` and `label` (see [Corrections](#corrections-from-the-original-notebook))
+   - Drop `id` and `label` 
    - Label-encode categorical columns (`proto`, `service`, `state`,
      `attack_cat`, etc.)
    - Split features (`X`) from the target (`y = attack_cat`)
@@ -98,24 +98,6 @@ models → compare results → visualize.
    - Feature importance (Random Forest and XGBoost)
    - Multi-class ROC curves and precision-recall curves (XGBoost)
 
-## Corrections from the original notebook
-
-This version fixes issues found in the original draft:
-
-1. **Data leakage (critical).** The original code only dropped the `id`
-   column before building the feature matrix `X`, leaving the `label` column
-   (0 = Normal, 1 = Attack) in as a predictor. Since `label` is derived
-   directly from the target `attack_cat`, every model could trivially tell
-   Normal from Attack traffic, artificially inflating all accuracy and F1
-   scores. **Fix:** `label` is now dropped along with `id`.
-2. **Mislabeled plot.** The Logistic Regression confusion matrix was titled
-   "Linear Regression Confusion Matrix." **Fix:** corrected to "Logistic
-   Regression Confusion Matrix."
-3. **Unscaled features for Logistic Regression.** Logistic Regression is
-   sensitive to feature magnitude, and columns like `sbytes`/`dbytes` are on
-   a much larger scale than binary flag columns, which can slow convergence
-   and bias coefficients. **Fix:** added `StandardScaler`, applied only to
-   the Logistic Regression model (tree-based models don't need it).
 
 ## Known limitations
 
