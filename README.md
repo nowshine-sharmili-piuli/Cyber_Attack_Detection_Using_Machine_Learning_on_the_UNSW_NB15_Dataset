@@ -69,7 +69,7 @@ Open the notebook in Jupyter, JupyterLab, or Google Colab and run all cells
 top to bottom:
 
 ```bash
-jupyter notebook Cyber_Attack_Detection_Using_Machine_Learning_on_the_UNSW_NB15_Dataset_CORRECTED.ipynb
+jupyter notebook Cyber_Attack_Detection_Using_Machine_Learning_on_the_UNSW_NB15_Dataset.ipynb
 ```
 
 The notebook runs end-to-end: load data → EDA → preprocessing → train 5
