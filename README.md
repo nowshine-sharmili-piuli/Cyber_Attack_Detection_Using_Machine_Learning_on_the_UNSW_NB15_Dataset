@@ -2,8 +2,8 @@
 
 A machine learning pipeline that classifies network traffic into normal
 activity or one of several attack categories using the
-[UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset) intrusion
-detection dataset. Five classifiers — Random Forest, Decision Tree, Logistic
+[UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset) 
+dataset. Five classifiers — Random Forest, Decision Tree, Logistic
 Regression, Naive Bayes, and XGBoost — are trained and compared on accuracy,
 classification reports, confusion matrices, ROC curves, and precision-recall
 curves.
@@ -11,7 +11,7 @@ curves.
 
 ## Contents
 
-- [Dataset](#dataset: https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15)
+- [Dataset](#dataset)
 - [Project structure](#project-structure)
 - [Setup](#setup)
 - [Usage](#usage)
@@ -33,7 +33,7 @@ The notebook expects the two official CSV splits:
 - `UNSW_NB15_training-set.csv`
 - `UNSW_NB15_testing-set.csv`
 
-Download them from the [official dataset page](https://research.unsw.edu.au/projects/unsw-nb15-dataset)
+Download them from the [official dataset page](https://www.kaggle.com/datasets/mrwellsdavid/unsw-nb15)
 and update the paths in the **Load Dataset** cell to point to your local copy:
 
 ```python
