@@ -16,7 +16,6 @@ curves.
 - [Setup](#setup)
 - [Usage](#usage)
 - [Pipeline overview](#pipeline-overview)
-- [Corrections from the original notebook](#corrections-from-the-original-notebook)
 - [Known limitations](#known-limitations)
 - [Requirements](#requirements)
 
@@ -49,7 +48,7 @@ different platform.
 
 ```
 .
-├── Cyber_Attack_Detection_Using_Machine_Learning_on_the_UNSW_NB15_Dataset_CORRECTED.ipynb
+├── Cyber_Attack_Detection_Using_Machine_Learning_on_the_UNSW_NB15_Dataset.ipynb
 └── README.md
 ```
 
