@@ -8,9 +8,6 @@ Regression, Naive Bayes, and XGBoost — are trained and compared on accuracy,
 classification reports, confusion matrices, ROC curves, and precision-recall
 curves.
 
-> **Note:** this is the corrected version of the notebook. See
-> [Corrections from the original notebook](#corrections-from-the-original-notebook)
-> for what was fixed and why.
 
 ## Contents
 
